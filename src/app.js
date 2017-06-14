@@ -44,8 +44,6 @@ toastr.options.newestOnTop = true;
 
 // Page loaded
 $(function(){
-  // Set app version text
-  $('#toolback .ver').text('v' + app.getVersion());
 
    // After page load, wait for the griddle image to finish before initializing.
   $('#griddle').load(initEditor);

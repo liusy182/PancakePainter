@@ -165,7 +165,7 @@ function windowInit() {
         width: app.settings.v.window.width,
         height: app.settings.v.window.height,
         resizable: true,
-        icon: appPath + "resources/app.png",
+        icon: appPath + "resources/icon.ico",
         title: "PancakePainter",
         fullscreenable: false // Workaround for fullscreen OSX bug :'(
       };
@@ -188,6 +188,7 @@ function windowInit() {
 
       // and load the index.html of the app.
       mainWindow.loadURL('file://' + __dirname + '/index.html');
+      mainWindow.webContents.openDevTools();
 
 
       // Save Move/Resize back to file

@@ -96,7 +96,7 @@ module.exports = function(grunt) {
           name: appInfo.name,
           dir: './',
           out: 'build/dist',
-          icon: 'resources/app.png',
+          icon: 'resources/icon.ico',
           ignore: buildIgnore,
           version: appInfo.electronVersion,
           platform: 'linux',
@@ -164,7 +164,7 @@ module.exports = function(grunt) {
       },
       linux64: {
         options: {
-          icon: 'resources/app.png',
+          icon: 'resources/icon.ico',
           arch: 'amd64'
         },
         src: 'build/dist/' + appInfo.name + '-linux-x64',
@@ -185,7 +185,7 @@ module.exports = function(grunt) {
       linux64: {
         options: {
           arch: 'x86_64',
-          icon: 'resources/app.png',
+          icon: 'resources/icon.ico',
         },
         src: 'build/dist/' + appInfo.name + '-linux-x64',
         dest: 'build/dist/'
