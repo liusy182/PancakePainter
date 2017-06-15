@@ -15,6 +15,9 @@ var BrowserWindow = require('electron').BrowserWindow;
 var dialog = require('electron').dialog;
 var i18n = require('i18next');
 
+require('./adsk/server')()
+
+
 // Report crashes to our server.
 //require('crash-reporter').start();
 
